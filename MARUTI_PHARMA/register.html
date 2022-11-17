@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>REGISTER</title>
+    <script>
+function validateform()
+{  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Enter name");  
+  return false;  
+}
+else if(password.length<6)
+{  
+  alert("Password must be least 6 characters long");  
+  return false;  
+}  
+else{
+    alert("registered successfully");
+    return flase;
+}
+}  
+</script>
+
+</head>
+<body>
+    <div class="register">
+        <div class="bg-gradient">
+          
+            <div class="glass">
+                <div id="anchor">
+                    <ul>
+                      <li><a style="padding-left: 40px;" href="Landingpage.html">HOME</a></li>
+                      <li><a href="search.html">SEARCH</a></li>
+                      <li><a href="aboutus.html">ABOUT US</a></li>
+                      <li><a href="connect.html" style=padding-right:300px;>CONNECT</a></li>
+                    </ul>
+                </div>
+                
+                <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">  
+                <p class="text" style="margin-top:-20px; margin-left: -30px;">REGISTER</p>   
+                        <p id="username">Set a Username</p>
+            <br>
+            <input type="text" name="name" style="border-radius: 20px; height:60px; width:300px; margin-left:140.94px; margin-top: 190.38px; "/>
+            <br>
+            <p id="password">Set a Password</p>
+            <br>
+            <input type="password" name="password" style="border-radius: 20px; height:60px; width:300px;  margin-left:140.94px; margin-top: 75.71px;"/>
+            <button id="button"><a style="color:white;" href="Landingpage.html" onclick="alert('Registered Successfully')">REGISTER</a></button>
+            
+            </div>
+        </div>
+    </div>
+    </body>
+</form>
+    
+</body>
+</html>

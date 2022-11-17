@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+    <link rel="stylesheet" href="search.css">
+    <script>
+        function show()
+{
+     imageFile=document.pharmaForm.pharma.value;
+     document.getElementById('result').innerHTML="<img src=\'" +imageFile+"\'height=200 width=300/>";
+}
+    </script>
+</head>
+<body>
+    <div class="search">
+        <div class="bg-gradient">
+            <div class="glass">
+
+                <div id="anchor">
+                    <ul>
+                      <li><a style="padding-left: 40px;" href="Landingpage.html">HOME</a></li>
+                      <li><a href="search.html">SEARCH</a></li>
+                      <li><a href="aboutus.html">ABOUT US</a></li>
+                      <li><a href="connect.html" style=padding-right:300px;>CONNECT</a></li>
+                      <li><a style="margin-left:75px;" href="cart.html">  CART<img src="C:\Users\User\Desktop\Nishitha\MARUTI_PHARMA\Cart.png"/></a></li>
+                    </ul>
+                </div>
+                <br>
+<br>
+<form name="pharmaForm">
+<select name="pharma" style=" background: black; background-color: white; height: 50px; width:20rem; margin-left: 150px; border-radius: 25px;">
+<option>--SELECT--</option>
+<option value="https://5.imimg.com/data5/SELLER/Default/2020/9/RD/SX/QS/37223018/ppe-kit-250x250.jpg" text="Price:2000RS">PPE KITS</option>
+<option value="https://media.nature.com/lw767/magazine-assets/d41586-021-02783-1/d41586-021-02783-1_19740148.jpg" text="Price:150RS">DENVER-250</option>
+<option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyN5D-uXHJlK-1a0ZaZp-zLOGVRhemHAxjA&usqp=CAU" text="Price:90RS">NANCE-100</option>
+<option value="https://5.imimg.com/data5/XR/PX/MY-2474176/pharmaceutical-liquid-syrups-500x500.jpg" text="Price:200RS">SILCIL(cough syrup)</option>
+<option value="https://www.bigbasket.com/media/uploads/p/l/280316-6_1-pampers-diaper-pants-medium.jpg" text="Price:300RS">VAMPERS(Diapers)</option>
+<option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu87plBxSgbXuiuGm_quygCGuoIA6a0b7WTxHyHtftG4Bizs1-r3xbMzLedAGzmYB5_Bs&usqp=CAU" text="Price:400RS">ECO(sanitary pad)</option>
+</select>
+<br>
+<br>
+<input type="button" style="height:35px; width:100px;margin-left: 150px;margin-top:10px; background-color: black; color: white; border-radius:10px;" value="submit" onclick="show()"/>
+<br>
+<br>
+<div id="result" style="margin-left:150px; border-radius:25px;"></div>
+<br>
+<br>
+<button id="CTA"><a style="color:white;" href="Landingpage.html" onclick="alert('Added to cart')">Add to cart</a></button>
+</form>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
